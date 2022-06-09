@@ -7,6 +7,8 @@
 
 body {
   background-color: #96a6b4;
+  background-image: url(file:///C:/Users/valen/Downloads/pexels-henry-&-co-2341290.jpg);
+  background-attachment: fixed;
   font-family: "Roboto", "Source Sans Pro", sans-serif;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -29,9 +31,7 @@ h2, h3 {
       grid-template-columns: 1fr;
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
-      grid-template-areas: "navbar1"
- "main"
- "footer";
+      grid-template-areas: "navbar1" "main" "footer";
 }
 
 .navbar1 {
@@ -66,8 +66,8 @@ h2, h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-image: url(https://www.marykay.es/-/media/images/mk/europe/spain/esuite/beauty-consultant/2021-08-como-ser-consultora-01.jpg?h=521&w=1418&la=es-ES&hash=00B71D4268907D2BE2155124C97CD85343BBAC96);
   background-repeat: no-repeat;
+  background-attachment: fixed;
   height: 450px;
 }
 
@@ -121,9 +121,10 @@ h2, h3 {
 }
 
 .ourBrandsSection .imgs {
-  background-image: url(https://www.toptal.com/designers/subtlepatterns/uploads/45degreee_fabric.png);
-  background-attachment: scroll;
-  height: 50rem;
+  background-image: url(file:///C:/Users/valen/Desktop/proyecSm/img/fondo3.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 80rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -137,14 +138,20 @@ h2, h3 {
 
 .ourBrandsSection .imgs .brand {
   margin: 10px;
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 300px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
   background-color: white;
+}
+
+.ourBrandsSection .imgs .brand:hover {
+  width: 400px;
+  height: 400px;
 }
 
 .someProductsSection {
   height: auto;
-  background-color: white;
 }
 
 .someProductsSection .someProducts {
@@ -152,7 +159,6 @@ h2, h3 {
   text-align: center;
   padding: 15px;
   text-transform: uppercase;
-  background-color: white;
 }
 
 .someProductsSection .productsImages {
@@ -165,7 +171,6 @@ h2, h3 {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  background-image: url(https://www.toptal.com/designers/subtlepatterns/uploads/45degreee_fabric.png);
 }
 
 .someProductsSection .productsImages .products {
@@ -200,22 +205,23 @@ h2, h3 {
 }
 
 .footer {
+  height: 10rem;
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: footer;
   margin-bottom: 0;
-  text-align: center;
-  padding: 20px;
   background-color: whitesmoke;
-  margin-bottom: 0;
 }
 
 .footer .footerIcons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  padding: 4rem;
 }
 
 .footer .footerIcons .iconosFooter {
@@ -243,10 +249,6 @@ h2, h3 {
     width: 300px;
     height: 300px;
   }
-  .introductionSection {
-    background: -webkit-gradient(linear, left top, right top, from(#ac9a9a), color-stop(#ac7e7e), to(#b16666));
-    background: linear-gradient(90deg, #ac9a9a, #ac7e7e, #b16666);
-  }
   .map {
     height: 50vh;
     width: 60vw;
@@ -256,56 +258,6 @@ h2, h3 {
 * {
   padding: 0;
   margin: 0;
-}
-
-body {
-  background-color: #96a6b4;
-  font-family: "Roboto", "Source Sans Pro", sans-serif;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-h2, h3 {
-  margin-bottom: 0;
-  font-weight: 600;
-  font-size: large;
-  font-family: "Playfair Display", sans-serif;
-  letter-spacing: 5px;
-}
-
-.wrapper {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
-  -ms-grid-rows: 1fr;
-      grid-template-rows: 1fr;
-      grid-template-areas: "navbar1"
- "main"
- "footer";
-}
-
-.navbar1 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: navbar1;
-  font-family: 'Roboto', sans-serif;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.navbar1 .navbar {
-  background-color: white;
-}
-
-.main {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: main;
 }
 
 .ourProductsText {
@@ -342,30 +294,6 @@ h2, h3 {
   justify-content: center;
 }
 
-.footer {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  grid-area: footer;
-  margin-bottom: 0;
-  text-align: center;
-  padding: 20px;
-  background-color: whitesmoke;
-  margin-bottom: 0;
-}
-
-.footer .footerIcons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-.footer .footerIcons .iconosFooter {
-  width: 35px;
-  height: 35px;
-}
-
 @media (min-width: 768px) {
   .mainLogo {
     margin-left: 40px;
@@ -377,85 +305,15 @@ h2, h3 {
   }
 }
 
-@media (min-width: 1024px) {
-  .brand {
-    -webkit-transition: all 1s;
-    transition: all 1s;
-  }
-  .brand:hover {
-    width: 300px;
-    height: 300px;
-  }
-  .introductionSection {
-    background: -webkit-gradient(linear, left top, right top, from(#ac9a9a), color-stop(#ac7e7e), to(#b16666));
-    background: linear-gradient(90deg, #ac9a9a, #ac7e7e, #b16666);
-  }
-  .map {
-    height: 50vh;
-    width: 60vw;
-  }
-}
-
 * {
   padding: 0;
   margin: 0;
 }
 
-body {
-  background-color: #96a6b4;
-  font-family: "Roboto", "Source Sans Pro", sans-serif;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-h2, h3 {
-  margin-bottom: 0;
-  font-weight: 600;
-  font-size: large;
-  font-family: "Playfair Display", sans-serif;
-  letter-spacing: 5px;
-}
-
-.wrapper {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
-  -ms-grid-rows: 1fr;
-      grid-template-rows: 1fr;
-      grid-template-areas: "navbar1"
- "main"
- "footer";
-}
-
-.navbar1 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: navbar1;
-  font-family: 'Roboto', sans-serif;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.navbar1 .navbar {
-  background-color: white;
-}
-
-.main {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: main;
-}
-
 .all-about {
-  background-image: url(https://www.wallpapertip.com/wmimgs/9-94032_iron-man-wallpaper-4k.jpg);
-  height: 75rem;
+  height: auto;
   background-repeat: no-repeat;
-  background-attachment: scroll;
+  background-attachment: fixed;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -472,6 +330,10 @@ h2, h3 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.all-about .text-allAbout .h1-allabout {
+  font-size: 3rem;
 }
 
 .all-about .paragraph-allAbout {
@@ -492,15 +354,16 @@ h2, h3 {
 
 .paragraph-container {
   margin: 2rem 0rem 2rem 0rem;
-  font-size: large;
+  font-size: 1rem;
   text-align: center;
 }
 
 .paragraph-container .paragraph {
-  padding: 1rem;
-  border: 2px solid #de6b9a;
-  border-radius: 1rem;
+  padding: 2rem;
+  border-radius: 10rem;
   background-color: rgba(255, 255, 255, 0.856);
+  -webkit-box-shadow: 2px 2px 20px #333;
+          box-shadow: 2px 2px 20px #333;
 }
 
 .aboutUs-photos {
@@ -521,34 +384,11 @@ h2, h3 {
 .aboutUs-photos .owner-photo {
   width: 25rem;
   height: 25rem;
-}
-
-.aboutUs-photos .coderhouse {
-  height: 6rem;
-}
-
-.footer {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  grid-area: footer;
-  margin-bottom: 0;
-  text-align: center;
-  padding: 20px;
-  background-color: whitesmoke;
-  margin-bottom: 0;
-}
-
-.footer .footerIcons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-.footer .footerIcons .iconosFooter {
-  width: 35px;
-  height: 35px;
+  width: 25rem;
+  height: 25rem;
+  -webkit-box-shadow: 2px 2px 20px #333;
+          box-shadow: 2px 2px 20px #333;
+  border-radius: 25%;
 }
 
 @media (min-width: 768px) {
@@ -559,25 +399,6 @@ h2, h3 {
   .list-nav {
     margin-bottom: 0px;
     margin-right: 15px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .brand {
-    -webkit-transition: all 1s;
-    transition: all 1s;
-  }
-  .brand:hover {
-    width: 300px;
-    height: 300px;
-  }
-  .introductionSection {
-    background: -webkit-gradient(linear, left top, right top, from(#ac9a9a), color-stop(#ac7e7e), to(#b16666));
-    background: linear-gradient(90deg, #ac9a9a, #ac7e7e, #b16666);
-  }
-  .map {
-    height: 50vh;
-    width: 60vw;
   }
 }
 
@@ -586,80 +407,6 @@ h2, h3 {
   margin: 0;
 }
 
-body {
-  background-color: #96a6b4;
-  font-family: "Roboto", "Source Sans Pro", sans-serif;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-h2, h3 {
-  margin-bottom: 0;
-  font-weight: 600;
-  font-size: large;
-  font-family: "Playfair Display", sans-serif;
-  letter-spacing: 5px;
-}
-
-.wrapper {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
-  -ms-grid-rows: 1fr;
-      grid-template-rows: 1fr;
-      grid-template-areas: "navbar1"
- "main"
- "footer";
-}
-
-.navbar1 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: navbar1;
-  font-family: 'Roboto', sans-serif;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.navbar1 .navbar {
-  background-color: white;
-}
-
-.main {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: main;
-}
-
-.footer {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  grid-area: footer;
-  margin-bottom: 0;
-  text-align: center;
-  padding: 20px;
-  background-color: whitesmoke;
-  margin-bottom: 0;
-}
-
-.footer .footerIcons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-.footer .footerIcons .iconosFooter {
-  width: 35px;
-  height: 35px;
-}
-
 @media (min-width: 768px) {
   .mainLogo {
     margin-left: 40px;
@@ -668,24 +415,5 @@ h2, h3 {
   .list-nav {
     margin-bottom: 0px;
     margin-right: 15px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .brand {
-    -webkit-transition: all 1s;
-    transition: all 1s;
-  }
-  .brand:hover {
-    width: 300px;
-    height: 300px;
-  }
-  .introductionSection {
-    background: -webkit-gradient(linear, left top, right top, from(#ac9a9a), color-stop(#ac7e7e), to(#b16666));
-    background: linear-gradient(90deg, #ac9a9a, #ac7e7e, #b16666);
-  }
-  .map {
-    height: 50vh;
-    width: 60vw;
   }
 }
