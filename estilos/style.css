@@ -8,21 +8,13 @@
 
 body {
   background-color: #96a6b4;
-  background-image: url(file:///C:/Users/valen/Downloads/pexels-henry-&-co-2341290.jpg);
+  background-image: url();
   background-attachment: fixed;
   font-family: "Roboto", "Source Sans Pro", sans-serif;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-h2, h3 {
-  margin-bottom: 0;
-  font-weight: 600;
-  font-size: large;
-  font-family: "Playfair Display", sans-serif;
-  letter-spacing: 5px;
 }
 
 .wrapper {
@@ -56,6 +48,10 @@ h2, h3 {
   grid-area: main;
 }
 
+.nav-item:hover {
+  text-decoration: underline;
+}
+
 .introductionSection {
   font-family: 'Playfair Display', sans-serif;
   display: -webkit-box;
@@ -67,6 +63,7 @@ h2, h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-image: url(file:///C:/Users/valen/Desktop/proyecSm/img/fondo-introduction.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   height: 450px;
@@ -82,8 +79,7 @@ h2, h3 {
           flex-direction: column;
   padding: 45px;
   margin: 20px;
-  border: solid black 3px;
-  background-image: url(https://www.toptal.com/designers/subtlepatterns/uploads/45degreee_fabric.png);
+  background-color: rgba(255, 255, 255, 0.808);
   border-radius: 50%;
   border-style: none;
   font-size: 2rem;
@@ -111,21 +107,22 @@ h2, h3 {
       -ms-flex-direction: column;
           flex-direction: column;
   height: auto;
+  background-repeat: repeat;
 }
 
 .ourBrandsSection .ourBrands {
-  padding: 15px;
-  color: black;
-  text-align: center;
+  background-color: white;
+  font-size: medium;
+  font-family: "Playfair Display", sans-serif;
   text-transform: uppercase;
-  background-image: url(https://www.toptal.com/designers/subtlepatterns/uploads/45degreee_fabric.png);
+  text-align: center;
+  padding: 15px;
 }
 
 .ourBrandsSection .imgs {
-  background-image: url(file:///C:/Users/valen/Desktop/proyecSm/img/fondo3.jpg);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  height: 80rem;
+  background: linear-gradient(45deg, rosybrown, white);
+  background-repeat: repeat;
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -138,17 +135,17 @@ h2, h3 {
 }
 
 .ourBrandsSection .imgs .brand {
-  margin: 10px;
-  width: 300px;
-  height: 300px;
+  margin: 5rem 0rem 5rem 0rem;
+  width: 20%;
+  height: 20%;
   -webkit-transition: all 1s;
   transition: all 1s;
   background-color: white;
 }
 
 .ourBrandsSection .imgs .brand:hover {
-  width: 400px;
-  height: 400px;
+  width: 25%;
+  height: 25%;
 }
 
 .someProductsSection {
@@ -156,10 +153,12 @@ h2, h3 {
 }
 
 .someProductsSection .someProducts {
-  font-size: 30px;
+  background-color: white;
+  font-size: large;
+  font-family: "Playfair Display", sans-serif;
+  text-transform: uppercase;
   text-align: center;
   padding: 15px;
-  text-transform: uppercase;
 }
 
 .someProductsSection .productsImages {
@@ -261,9 +260,12 @@ h2, h3 {
   margin: 0;
 }
 
-.ourProductsText {
-  background-image: url(file:///C:/Users/valen/Desktop/proyecSm/img/fondo2.jpg);
+.bg-ourproducts {
+  background-image: url(file:///C:/Users/valen/Desktop/proyecSm/img/fondo-someproducts.jpg);
   background-attachment: fixed;
+}
+
+.ourProductsText {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -289,9 +291,10 @@ h2, h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding: 2rem;
 }
 
@@ -300,6 +303,7 @@ h2, h3 {
   height: auto;
   -webkit-box-shadow: 2px 2px 20px #333;
           box-shadow: 2px 2px 20px #333;
+  margin: 1rem 0rem 1rem 0rem;
 }
 
 * {
@@ -309,8 +313,8 @@ h2, h3 {
 
 .all-about {
   height: auto;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-image: url(https://www.toptal.com/designers/subtlepatterns/uploads/repeated-square-dark.png);
+  background-color: black;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -351,16 +355,17 @@ h2, h3 {
 
 .paragraph-container {
   margin: 2rem 0rem 2rem 0rem;
-  font-size: 1rem;
+  font-size: 1.2rem;
   text-align: center;
 }
 
 .paragraph-container .paragraph {
+  color: #de6b9a;
   padding: 2rem;
   border-radius: 10rem;
-  background-color: rgba(255, 255, 255, 0.856);
-  -webkit-box-shadow: 2px 2px 20px #333;
-          box-shadow: 2px 2px 20px #333;
+  background-color: rgba(0, 0, 0, 0.856);
+  -webkit-box-shadow: 2px 2px 15px white;
+          box-shadow: 2px 2px 15px white;
 }
 
 .aboutUs-photos {
@@ -404,6 +409,16 @@ h2, h3 {
   margin: 0;
 }
 
+.form {
+  background-image: url(file:///C:/Users/valen/Desktop/proyecSm/img/fondo-contacto.jpg);
+  background-repeat: no-repeat;
+}
+
+.form .formulario {
+  background-color: rgba(255, 255, 255, 0.664);
+  border-radius: 1rem;
+}
+
 @media (min-width: 768px) {
   .mainLogo {
     margin-left: 40px;
@@ -420,6 +435,10 @@ h2, h3 {
   margin: 0;
 }
 
+.body-promociones {
+  background-image: url(file:///C:/Users/valen/Desktop/proyecSm/img/fondo-promociones.jpg);
+}
+
 .descuento {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -432,7 +451,6 @@ h2, h3 {
       -ms-flex-align: center;
           align-items: center;
   height: 30rem;
-  background-image: url(file:///C:/Users/valen/Desktop/proyecSm/img/fondo3.jpg);
   padding-top: 10rem;
 }
 
@@ -451,26 +469,10 @@ h2, h3 {
   border-radius: 10rem;
 }
 
-.imagenes-productos {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 2rem;
-}
-
-.imagenes-productos .fotos-productos {
-  width: 20rem;
-  height: auto;
-  -webkit-box-shadow: 2px 2px 20px #333;
-          box-shadow: 2px 2px 20px #333;
-}
-
 .productos-con-descuento {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: x-large;
   text-align: center;
+  background-color: rgba(255, 255, 255, 0.76);
   padding: 1rem;
 }

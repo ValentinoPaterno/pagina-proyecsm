@@ -5,12 +5,14 @@
     margin: 0;
 }
 
+.body-promociones{
+    background-image: url(file:///C:/Users/valen/Desktop/proyecSm/img/fondo-promociones.jpg);
+}
 .descuento{
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 30rem;
-    background-image: url(file:///C:/Users/valen/Desktop/proyecSm/img/fondo3.jpg);
     padding-top: 10rem;
     .presentación-promociones{
         font-size: large;
@@ -27,20 +29,12 @@
     }
 }
 
-.imagenes-productos{
-    display: flex;
-    justify-content: space-between;
-    padding: 2rem;
-    .fotos-productos{
-        width: 20rem;
-        height: auto;
-        box-shadow: 2px 2px 20px #333;
-    }
-}
+
 .productos-con-descuento{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: x-large;
     text-align: center;
+    background-color: rgba(255, 255, 255, 0.76);
     padding: 1rem;
 }
 

@@ -5,9 +5,12 @@
     margin: 0;
 }
 
-.ourProductsText{
-    background-image: url(file:///C:/Users/valen/Desktop/proyecSm/img/fondo2.jpg);
+.bg-ourproducts{
+    background-image: url(file:///C:/Users/valen/Desktop/proyecSm/img/fondo-someproducts.jpg);
     background-attachment: fixed;
+}
+
+.ourProductsText{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,12 +26,14 @@
 }
 .imagenes-productos{
     display: flex;
-    justify-content: space-between;
+    justify-content:space-around;
+    flex-wrap: wrap;
     padding: 2rem;
     .fotos-productos{
         width: 20rem;
         height: auto;
         box-shadow: 2px 2px 20px #333;
+        margin: 1rem 0rem 1rem 0rem;
     }
 }
 

@@ -7,8 +7,8 @@
 
 .all-about{
     height: auto;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-image: url(https://www.toptal.com/designers/subtlepatterns/uploads/repeated-square-dark.png);
+    background-color: black;
     flex-wrap: wrap;
     .text-allAbout{
         font-family:Georgia, 'Times New Roman', Times, serif;
@@ -33,13 +33,14 @@
 
 .paragraph-container{
     margin: 2rem 0rem 2rem 0rem;
-    font-size: 1rem;
+    font-size: 1.2rem;
     text-align: center;
     .paragraph{
+        color: rgb(222, 107, 154);
         padding: 2rem;
         border-radius: 10rem;
-        background-color: rgba(255, 255, 255, 0.856);
-        box-shadow: 2px 2px 20px #333;
+        background-color: rgba(0, 0, 0, 0.856);
+        box-shadow: 2px 2px 15px rgb(255, 255, 255);
     }
 }
 
