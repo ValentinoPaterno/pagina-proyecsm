@@ -1,27 +1,27 @@
 @import "../abstracts/variables";
 
-*{
-    padding: 0;  
-    margin: 0;
+.containerContact{
+    display: flex;
+    flex-direction: column;
+    @media(min-width: 768px){
+        flex-direction: row;
+        
+    }
 }
 
 .form{
-    background-image: url(file:///C:/Users/valen/Desktop/proyecSm/img/fondo-contacto.jpg);
+    background-image: url(https://education.trilogic.eus/wp-content/uploads/sites/3/2018/04/fondo-contacto1.jpg);
     background-repeat: no-repeat;
     .formulario{
         background-color: rgba(255, 255, 255, 0.664);
         border-radius: 1rem;
     }
+    .contact-us{
+        font-family:'Playfair Display', sans-serif;
+        align-self: center;
+        color: rgb(221, 221, 221);
+        padding: 2rem;
+    }
 }
 
-@media (min-width: 768px){
-    .mainLogo{
-        margin-left: 40px;
-        margin-bottom: 30px;
-    }
-    .list-nav{
-        margin-bottom: 0px;
-        margin-right: 15px;
-    }
-}
 

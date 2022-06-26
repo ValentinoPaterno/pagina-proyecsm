@@ -6,6 +6,14 @@
   margin: 0;
 }
 
+.h2-index {
+  font-size: 1.5rem;
+  font-family: "Playfair Display", sans-serif;
+  font-weight: 550;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
 body {
   background-color: #96a6b4;
   background-image: url();
@@ -42,10 +50,21 @@ body {
   background-color: white;
 }
 
+.logodesm {
+  width: 150px;
+  height: 150px;
+}
+
 .main {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: main;
+}
+
+.main-index {
+  background-image: url(https://images.pexels.com/photos/4041276/pexels-photo-4041276.jpeg);
+  background-repeat: repeat;
+  background-attachment: fixed;
 }
 
 .nav-item:hover {
@@ -63,10 +82,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-image: url(file:///C:/Users/valen/Desktop/proyecSm/img/fondo-introduction.jpg);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  height: 450px;
+  height: 28.125rem;
 }
 
 .introductionSection .introduction {
@@ -79,11 +95,7 @@ body {
           flex-direction: column;
   padding: 45px;
   margin: 20px;
-  background-color: rgba(255, 255, 255, 0.808);
-  border-radius: 50%;
-  border-style: none;
-  font-size: 2rem;
-  color: black;
+  color: white;
 }
 
 .introductionSection .introduction .mainHeading {
@@ -106,22 +118,18 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: auto;
   background-repeat: repeat;
 }
 
 .ourBrandsSection .ourBrands {
   background-color: white;
-  font-size: medium;
-  font-family: "Playfair Display", sans-serif;
   text-transform: uppercase;
   text-align: center;
   padding: 15px;
 }
 
-.ourBrandsSection .imgs {
-  background: linear-gradient(45deg, rosybrown, white);
-  background-repeat: repeat;
+.imgs {
+  background-color: rgba(255, 255, 255, 0.651);
   height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -130,11 +138,9 @@ body {
       flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  -ms-flex-line-pack: center;
-      align-content: center;
 }
 
-.ourBrandsSection .imgs .brand {
+.imgs .brand {
   margin: 5rem 0rem 5rem 0rem;
   width: 20%;
   height: 20%;
@@ -143,9 +149,25 @@ body {
   background-color: white;
 }
 
-.ourBrandsSection .imgs .brand:hover {
-  width: 25%;
-  height: 25%;
+@media (min-width: 1440px) {
+  .imgs .brand {
+    width: 10%;
+    height: 10%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .imgs .brand:hover {
+    width: 25%;
+    height: 25%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .imgs .brand:hover {
+    width: 15%;
+    height: 15%;
+  }
 }
 
 .someProductsSection {
@@ -154,54 +176,25 @@ body {
 
 .someProductsSection .someProducts {
   background-color: white;
-  font-size: large;
-  font-family: "Playfair Display", sans-serif;
   text-transform: uppercase;
   text-align: center;
   padding: 15px;
 }
 
-.someProductsSection .productsImages {
-  padding: 1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-}
-
-.someProductsSection .productsImages .products {
-  margin: 1rem;
-  width: 270px;
-  height: 600px;
-  -webkit-box-shadow: 2px 2px 20px #333;
-          box-shadow: 2px 2px 20px #333;
-}
-
-.locationSection .location {
-  text-align: center;
-  text-transform: uppercase;
-  padding: 15px;
-  font-size: 20px;
-  background-color: white;
-}
-
-.locationSection .mapContainer {
+.carousel-container-index {
+  margin: 1rem 0rem 1rem 0rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-image: url(https://www.toptal.com/designers/subtlepatterns/uploads/leaves-pattern.png);
 }
 
-.locationSection .mapContainer .map {
-  margin-top: 20px;
-  margin-bottom: 20px;
+@media (min-width: 1280px) {
+  .carousel-container-index .carousel {
+    width: 1280px;
+  }
 }
 
 .footer {
@@ -229,115 +222,155 @@ body {
   height: 35px;
 }
 
-@media (min-width: 768px) {
-  .mainLogo {
-    margin-left: 40px;
-    margin-bottom: 30px;
-  }
-  .list-nav {
-    margin-bottom: 0px;
-    margin-right: 15px;
-  }
+.main-productos {
+  background-image: url(https://images.pexels.com/photos/7290715/pexels-photo-7290715.jpeg);
+  text-align: center;
 }
 
-@media (min-width: 1024px) {
-  .brand {
-    -webkit-transition: all 1s;
-    transition: all 1s;
-  }
-  .brand:hover {
-    width: 300px;
-    height: 300px;
-  }
-  .map {
-    height: 50vh;
-    width: 60vw;
-  }
-}
-
-* {
-  padding: 0;
-  margin: 0;
-}
-
-.bg-ourproducts {
-  background-image: url(file:///C:/Users/valen/Desktop/proyecSm/img/fondo-someproducts.jpg);
-  background-attachment: fixed;
-}
-
-.ourProductsText {
+.textProductsContainer {
+  height: 28.125rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 20rem;
+  font-family: 'Playfair Display', sans-serif;
+}
+
+.textProductsContainer .h1-productos {
+  color: #a3371b;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding: 2rem;
+  font-weight: bold;
+  font-size: 2rem;
   text-transform: uppercase;
 }
 
-.ourProductsText .productsText {
-  font-weight: bold;
-  padding: 1rem;
-  border: 1px solid rgba(0, 0, 0, 0);
-  border-radius: 100px;
-  background-color: white;
+@media (min-width: 1050px) {
+  .textProductsContainer .h1-productos {
+    font-size: 3rem;
+  }
+}
+
+.aclaración-container .aclaraciónProductos {
+  color: #a3371b;
+  font-size: 1rem;
+  background-color: rgba(0, 0, 0, 0.815);
+  padding: 2rem;
+  font-family: 'Playfair Display', sans-serif;
+}
+
+@media (min-width: 1050px) {
+  .aclaración-container .aclaraciónProductos {
+    font-size: 1.5rem;
+  }
+}
+
+.iconoWppProductos {
+  height: 5rem;
+  padding: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.815);
+  border-radius: 0.5rem;
 }
 
 .imagenes-productos {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 2rem;
+  margin-bottom: 1rem;
 }
 
-.imagenes-productos .fotos-productos {
-  width: 20rem;
-  height: auto;
-  -webkit-box-shadow: 2px 2px 20px #333;
-          box-shadow: 2px 2px 20px #333;
-  margin: 1rem 0rem 1rem 0rem;
+.imagenes-productos .card {
+  -webkit-box-shadow: 0px 10px 10px;
+          box-shadow: 0px 10px 10px;
+  margin-top: 2rem;
 }
 
-* {
-  padding: 0;
-  margin: 0;
+.main-acerca {
+  background-image: url(https://images.pexels.com/photos/1910231/pexels-photo-1910231.jpeg);
 }
 
-.all-about {
-  height: auto;
-  background-image: url(https://www.toptal.com/designers/subtlepatterns/uploads/repeated-square-dark.png);
-  background-color: black;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+.main-acerca .acerca {
+  text-align: center;
+  font-family: 'Playfair Display', sans-serif;
 }
 
-.all-about .text-allAbout {
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  color: #de6b9a;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  padding: 4rem 0rem 4rem 0rem;
+.main-acerca .acerca .container-h1acerca {
+  height: 28.125rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  color: #d64a4a;
+  text-transform: uppercase;
 }
 
-.all-about .text-allAbout .h1-allabout {
-  font-size: 3rem;
+.main-acerca .acerca .container-descripción-acerca {
+  color: black;
+  background-color: rgba(255, 255, 255, 0.671);
 }
 
-.all-about .paragraph-allAbout {
+.main-acerca .acerca .container-foto {
+  margin: 10rem 0rem 10rem 0rem;
+}
+
+.h1-acerca, .p-acerca {
+  margin: 0;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.p-acerca {
+  padding: 1rem;
+  color: black;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+@media (min-width: 600px) {
+  .p-acerca {
+    font-size: larger;
+  }
+}
+
+.a-acerca {
+  color: #d64a4a;
+}
+
+.foto-vys {
+  width: 300px;
+  -webkit-box-shadow: 10px 20px 10px #d64a4a;
+          box-shadow: 10px 20px 10px #d64a4a;
+}
+
+@media (min-width: 600px) {
+  .foto-vys {
+    width: 500px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .foto-vys {
+    width: 900px;
+  }
+}
+
+.figcaption-acerca {
+  color: white;
+}
+
+.containerContact {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -345,72 +378,19 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 0rem 15rem 0rem 15rem;
-}
-
-.paragraph-container {
-  margin: 2rem 0rem 2rem 0rem;
-  font-size: 1.2rem;
-  text-align: center;
-}
-
-.paragraph-container .paragraph {
-  color: #de6b9a;
-  padding: 2rem;
-  border-radius: 10rem;
-  background-color: rgba(0, 0, 0, 0.856);
-  -webkit-box-shadow: 2px 2px 15px white;
-          box-shadow: 2px 2px 15px white;
-}
-
-.aboutUs-photos {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.aboutUs-photos .owner-photo {
-  width: 25rem;
-  height: 25rem;
-  width: 25rem;
-  height: 25rem;
-  -webkit-box-shadow: 2px 2px 20px #333;
-          box-shadow: 2px 2px 20px #333;
-  border-radius: 25%;
 }
 
 @media (min-width: 768px) {
-  .mainLogo {
-    margin-left: 40px;
-    margin-bottom: 30px;
+  .containerContact {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
-  .list-nav {
-    margin-bottom: 0px;
-    margin-right: 15px;
-  }
-}
-
-* {
-  padding: 0;
-  margin: 0;
 }
 
 .form {
-  background-image: url(file:///C:/Users/valen/Desktop/proyecSm/img/fondo-contacto.jpg);
+  background-image: url(https://education.trilogic.eus/wp-content/uploads/sites/3/2018/04/fondo-contacto1.jpg);
   background-repeat: no-repeat;
 }
 
@@ -419,27 +399,76 @@ body {
   border-radius: 1rem;
 }
 
+.form .contact-us {
+  font-family: 'Playfair Display', sans-serif;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  color: #dddddd;
+  padding: 2rem;
+}
+
+.promociones-section {
+  text-align: center;
+  background-image: url(https://images.pexels.com/photos/5705102/pexels-photo-5705102.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  background-attachment: fixed;
+}
+
+.promociones-section .h1-container {
+  height: 28.125rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.promociones-section .h1-container .h1-promociones {
+  font-weight: bold;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-family: 'Playfair Display', sans-serif;
+  color: #c09725;
+  background-color: rgba(0, 0, 0, 0.432);
+  border-radius: 5rem;
+  padding: 2rem;
+  margin: 0rem 1rem 0rem 1rem;
+}
+
+.promociones-section .descripción-promociones {
+  color: #c09725;
+}
+
+.promociones-section .pagos-container {
+  font-family: 'Playfair Display', sans-serif;
+  color: beige;
+  background-color: rgba(0, 0, 0, 0.432);
+  padding: 1rem;
+}
+
+.p-promociones {
+  font-family: 'Playfair Display', sans-serif;
+  font-weight: 500;
+  background-color: rgba(0, 0, 0, 0.432);
+  padding: 1rem;
+}
+
 @media (min-width: 768px) {
-  .mainLogo {
-    margin-left: 40px;
-    margin-bottom: 30px;
-  }
-  .list-nav {
-    margin-bottom: 0px;
-    margin-right: 15px;
+  .p-promociones {
+    font-size: larger;
   }
 }
 
-* {
-  padding: 0;
-  margin: 0;
+@media (min-width: 1024px) {
+  .p-promociones {
+    font-size: x-large;
+    font-weight: bold;
+  }
 }
 
-.body-promociones {
-  background-image: url(file:///C:/Users/valen/Desktop/proyecSm/img/fondo-promociones.jpg);
-}
-
-.descuento {
+.métodosdepago-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -447,32 +476,19 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 30rem;
-  padding-top: 10rem;
+  color: beige;
 }
 
-.descuento .presentación-promociones {
+.métodosdepago-container .figure-promociones {
+  margin: 4rem 0rem 4rem 0rem;
+  font-weight: 500;
+}
+
+.métodosdepago-container .figure-promociones .métodosdepago {
+  width: 90px;
+}
+
+.métodosdepago-container .figure-promociones .figcaption-promociones {
+  color: white;
   font-size: large;
-  background-color: white;
-  padding: 1rem;
-  border-radius: 10rem;
-}
-
-.descuento .descuento-general {
-  padding: 1rem;
-  font-weight: bold;
-  background-color: white;
-  font-size: large;
-  border-radius: 10rem;
-}
-
-.productos-con-descuento {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: x-large;
-  text-align: center;
-  background-color: rgba(255, 255, 255, 0.76);
-  padding: 1rem;
 }

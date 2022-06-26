@@ -10,6 +10,14 @@
     height: $height;
 }
 
+.h2-index{
+    font-size: $h2-h3-fontsize;
+    font-family: $h2-h3-fonts;
+    font-weight: 550;
+    letter-spacing: 2px;
+    margin: 0
+}
+
 body{
     background-color: $grey;
     background-image: url();
@@ -17,8 +25,6 @@ body{
     font-family: $body-font;
     flex-direction: column;
 }
-
-
 
 .wrapper{
     display: grid;
@@ -39,32 +45,37 @@ body{
     }
 }
 
+.logodesm{
+    width: 150px;
+    height: 150px;
+}
+
 .main{
     grid-area: main;
+}
+
+.main-index{
+    background-image: url(https://images.pexels.com/photos/4041276/pexels-photo-4041276.jpeg);
+    background-repeat: repeat;
+    background-attachment: fixed;
 }
 
 .nav-item:hover{
     text-decoration: underline;
 }
+
 .introductionSection{
     font-family: 'Playfair Display', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(file:///C:/Users/valen/Desktop/proyecSm/img/fondo-introduction.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    height: 450px;
+    height: 28.125rem;
     .introduction{
         display: flex;
         flex-direction: column;
         padding: 45px;
         margin: 20px;
-        background-color: rgba(255, 255, 255, 0.808);
-        border-radius: 50%;
-        border-style:none;
-        font-size: 2rem;
-        color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
         .mainHeading{
             font-weight: map-get($stylesMainHeading, negrita);
             text-transform: map-get($stylesMainHeading, mayus);
@@ -81,32 +92,35 @@ body{
 .ourBrandsSection{
     display: flex;
     flex-direction: column;
-    height: auto;
     background-repeat: repeat;
     .ourBrands{
         background-color: white;
-        font-size: medium;
-        font-family: $h2-h3-fonts;
         text-transform: uppercase;
         text-align: center;
         padding: 15px;
     }
-    .imgs{
-        background: linear-gradient(45deg, rosybrown, white);
-        background-repeat: repeat;
-        height: auto;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        align-content: center;
-        .brand{
-            margin: 5rem 0rem 5rem 0rem;
-            @include sizes(20%, 20%);
-            transition: all 1s;
-            background-color: white;
+}
+.imgs{
+    background-color: rgba(255, 255, 255, 0.651);
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    .brand{
+        margin: 5rem 0rem 5rem 0rem;
+        @include sizes(20%, 20%);
+        transition: all 1s;
+        background-color: white;
+        @media(min-width: 1440px){
+            @include sizes(10%, 10%)
         }
-        .brand:hover{
-            @include sizes(25%, 25%);
+    }
+    .brand:hover{
+        @media(min-width: 1024px){
+            @include sizes(25%, 25%);    
+        }
+        @media (min-width: 1440px){
+            @include sizes(15%, 15%)
         }
     }
 }
@@ -114,42 +128,20 @@ body{
 .someProductsSection{
     height: auto;
     .someProducts{
-        background-color: white;
-        font-size: large;
-        font-family: $h2-h3-fonts;
+        background-color: rgb(255, 255, 255);
         text-transform: uppercase;
         text-align: center;
         padding: 15px;
-    }
-    .productsImages{
-        padding: 1rem;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        .products{
-            margin: 1rem;
-            width: 270px;
-            height: 600px;
-            box-shadow: 2px 2px 20px #333;
-        }
     }
 }
 
-.locationSection{
-    .location{
-        text-align: center;
-        text-transform: uppercase;
-        padding: 15px;
-        font-size: 20px;
-        background-color: rgb(255, 255, 255);
-    }
-    .mapContainer{
-        display: flex;
-        justify-content: center;
-        background-image: url(https://www.toptal.com/designers/subtlepatterns/uploads/leaves-pattern.png);
-        .map{
-            margin-top: 20px;
-            margin-bottom: 20px;
+.carousel-container-index{
+    margin: 1rem 0rem 1rem 0rem;
+    display: flex;
+    justify-content: center;
+    .carousel{
+        @media(min-width:1280px){
+            width: 1280px;
         }
     }
 }
@@ -171,28 +163,6 @@ body{
     }
 }
 
-@media (min-width: 768px){
-    .mainLogo{
-        margin-left: 40px;
-        margin-bottom: 30px;
-    }
-    .list-nav{
-        margin-bottom: 0px;
-        margin-right: 15px;
-    }
-}
 
-@media (min-width: 1024px){
-    .brand{
-        transition: all 1s;
-    }
-    .brand:hover{
-        @include sizes(300px, 300px);
-    }
-    .map{
-        height: 50vh;
-        width: 60vw;
-    }
-}
 
 

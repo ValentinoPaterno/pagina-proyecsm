@@ -1,44 +1,56 @@
 @import "../abstracts/variables";
 
-*{
-    padding: 0;  
-    margin: 0;
+.main-productos{
+    background-image: url(https://images.pexels.com/photos/7290715/pexels-photo-7290715.jpeg);
+    text-align: center;
 }
 
-.bg-ourproducts{
-    background-image: url(file:///C:/Users/valen/Desktop/proyecSm/img/fondo-someproducts.jpg);
-    background-attachment: fixed;
-}
-
-.ourProductsText{
+.textProductsContainer{
+    height: 28.125rem;
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 20rem;
-    text-transform: uppercase;
-    .productsText{
+    font-family: 'Playfair Display', sans-serif;
+    .h1-productos{
+        color: rgb(163, 55, 27);
+        align-self: center;
+        padding: 2rem;
         font-weight: bold;
-        padding: 1rem;
-        border: 1px solid rgba(0, 0, 0, 0);
-        border-radius: 100px;
-        background-color: rgb(255, 255, 255);
+        font-size: 2rem;
+        text-transform: uppercase;
+        @media(min-width: 1050px){
+            font-size: 3rem;
+        }
     }
 }
+
+.aclaración-container{
+    .aclaraciónProductos{
+        color:rgb(163, 55, 27);
+        font-size: 1rem;
+        background-color: rgba(0, 0, 0, 0.815);
+        padding: 2rem;
+        font-family: 'Playfair Display', sans-serif;
+        @media(min-width: 1050px){
+            font-size: 1.5rem;
+        }
+    }
+}
+
+
+.iconoWppProductos{
+    height: 5rem;
+    padding: 0.5rem;
+    background-color: rgba(0, 0, 0, 0.815);
+    border-radius: 0.5rem;
+}
+
 .imagenes-productos{
     display: flex;
-    justify-content:space-around;
+    justify-content: space-evenly;
     flex-wrap: wrap;
-    padding: 2rem;
-    .fotos-productos{
-        width: 20rem;
-        height: auto;
-        box-shadow: 2px 2px 20px #333;
-        margin: 1rem 0rem 1rem 0rem;
+    margin-bottom: 1rem;
+    .card{
+        box-shadow: 0px 10px 10px;
+        margin-top: 2rem;
     }
 }
-
-
-
-
-
-

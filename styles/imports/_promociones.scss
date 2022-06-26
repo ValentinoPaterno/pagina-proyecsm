@@ -1,40 +1,62 @@
 @import "../abstracts/variables";
 
-*{
-    padding: 0;  
-    margin: 0;
+.promociones-section{
+    text-align: center;
+    background-image: url(https://images.pexels.com/photos/5705102/pexels-photo-5705102.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+    background-attachment: fixed;
+    .h1-container{
+        height: 28.125rem;
+        display: flex;
+        justify-content: center;
+        .h1-promociones{
+            font-weight: bold;
+            align-self: center;
+            font-family: 'Playfair Display', sans-serif;
+            color: rgb(192, 151, 37);
+            background-color: rgba(0, 0, 0, 0.432);
+            border-radius: 5rem;
+            padding: 2rem;
+            margin: 0rem 1rem 0rem 1rem;
+        }
+    }
+    .descripción-promociones{
+        color: rgb(192, 151, 37);
+    }
+    .pagos-container{
+        font-family: 'Playfair Display', sans-serif;
+        color: beige;
+        background-color: rgba(0, 0, 0, 0.432);
+        padding: 1rem;
+    }
 }
 
-.body-promociones{
-    background-image: url(file:///C:/Users/valen/Desktop/proyecSm/img/fondo-promociones.jpg);
+.p-promociones{
+    font-family: 'Playfair Display', sans-serif;
+    font-weight: 500;
+    background-color: rgba(0, 0, 0, 0.432);
+    padding: 1rem;
+    @media(min-width: 768px){
+        font-size: larger;
+    }
+    @media(min-width: 1024px){
+        font-size: x-large;
+        font-weight: bold;
+    }
 }
-.descuento{
+
+.métodosdepago-container{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    height: 30rem;
-    padding-top: 10rem;
-    .presentación-promociones{
-        font-size: large;
-        background-color: white;
-        padding: 1rem;
-        border-radius: 10rem;
-    }
-    .descuento-general{
-        padding: 1rem;
-        font-weight: bold;
-        background-color: white;
-        font-size: large;
-        border-radius: 10rem;
+    color: beige;
+    .figure-promociones{
+        margin: 4rem 0rem 4rem 0rem;
+        font-weight: 500;
+        .métodosdepago{
+            width: 90px;
+        }
+        .figcaption-promociones{
+            color: white;
+            font-size: large;
+        }
     }
 }
-
-
-.productos-con-descuento{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: x-large;
-    text-align: center;
-    background-color: rgba(255, 255, 255, 0.76);
-    padding: 1rem;
-}
-
